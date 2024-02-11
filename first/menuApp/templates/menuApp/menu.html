@@ -1,0 +1,8 @@
+<p>
+    {% for item in menu %}
+        {% if item.name %} <p><a href = '{{item.name}}'>{{item}}</a></p>
+        {% else %}{%include 'menuApp/menu.html' with menu=item %}
+        {% endif %}
+    {% endfor %}
+
+</p>
